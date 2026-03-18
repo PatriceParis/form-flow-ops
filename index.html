@@ -524,7 +524,18 @@ function prevStep() {
 const ZAPIER_WEBHOOK_URL = 'https://hooks.zapier.com/hooks/catch/945218/updxlge/';
 
 function submitForm() {
-  const data = {};
+  const data = {
+    role: '',
+    blocage: '',
+    module: '',
+    format: '',
+    prix: '',
+    declencheur: '',
+    email: '',
+    nom: '',
+    submitted_at: '',
+    source: ''
+  };
   document.querySelectorAll('input[type="radio"]:checked').forEach(r => {
     data[r.name] = r.value;
   });
