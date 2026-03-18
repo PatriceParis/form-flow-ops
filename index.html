@@ -548,8 +548,8 @@ function submitForm() {
   fetch(ZAPIER_WEBHOOK_URL, {
     method: 'POST',
     mode: 'no-cors',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data)
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(data).toString()
   })
   .then(() => { showSuccess(); })
   .catch(() => { showSuccess(); });
