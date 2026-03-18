@@ -424,9 +424,9 @@ textarea {
     <div class="question-group">
       <label class="question">Quel format vous conviendrait le mieux ?</label>
       <div class="options">
-        <label class="option"><input type="radio" name="format" value="async"><span class="label">100 % vidéo en ligne, à mon rythme</span></label>
-        <label class="option"><input type="radio" name="format" value="hybrid"><span class="label">Vidéo + 1 session live Q&A par mois</span></label>
-        <label class="option"><input type="radio" name="format" value="cohort"><span class="label">Cohorte live (groupe, 4 semaines, accompagnement)</span></label>
+        <label class="option"><input type="radio" name="format_pref" value="async"><span class="label">100 % vidéo en ligne, à mon rythme</span></label>
+        <label class="option"><input type="radio" name="format_pref" value="hybrid"><span class="label">Vidéo + 1 session live Q&A par mois</span></label>
+        <label class="option"><input type="radio" name="format_pref" value="cohort"><span class="label">Cohorte live (groupe, 4 semaines, accompagnement)</span></label>
       </div>
     </div>
 
@@ -528,7 +528,7 @@ function submitForm() {
     role: '',
     blocage: '',
     module: '',
-    format: '',
+    format_pref: '',
     prix: '',
     declencheur: '',
     email: '',
